@@ -1,0 +1,4 @@
+Fordelen ved at programmere deklarativt er brugen af XML filer til en mere kreativ frihed i forhold til UI.
+XML filen giver dig mulighed for at lave bestemme størrelser på knapper, textfelter osv. Det ligner meget CSS.
+Ved brug af XML filer kan man få en designer om at designe app'ens UI.
+

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Aflevering01_s164646_SimonJohansen</string>
+    <string name="welcome_text">Klik på en knap.</string>
+    <string name="nameField">Indtast venligst dit navn.</string>
+    <string name="button1">TextChange</string>
+    <string name="button2">Test Intent</string>
+    <string name="button3">WebBrowser</string>
+    <string name="okButton">Velkommen</string>
+    <string name="changed_b_name">Hej! :)</string>
+    <string name="webChange">Indtast Webpage</string>
+    <string name="title_activity_b">ActivityB</string>
+    v<string name="newActvity">Velkommen til din nye activity</string>
+</resources>
