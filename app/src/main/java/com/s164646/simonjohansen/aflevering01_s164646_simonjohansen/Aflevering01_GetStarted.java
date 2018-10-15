@@ -75,7 +75,6 @@ public class Aflevering01_GetStarted extends AppCompatActivity implements View.O
                 Toast.makeText(this, "Velkommen, " + userName, Toast.LENGTH_SHORT).show();
                 System.out.println("Velkommen knappen er blevet klikket");
                 break;
-                break;
         }
     }
 
