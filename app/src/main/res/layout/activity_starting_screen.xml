@@ -10,22 +10,21 @@
         android:id="@+id/start_Aflevering_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/start_Aflevering_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Button"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
         app:layout_constraintStart_toStartOf="parent" />@strings
     tools:layout_editor_absoluteX="16dp"
     tools:layout_editor_absoluteY="161dp" />
-
-    <Button
-        android:id="@+id/start_Aflevering_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
 
     <TextView
         android:id="@+id/textView5"
@@ -52,18 +51,19 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="29dp"
         android:text="@string/aflevering_1"
-        app:layout_constraintBaseline_toBaselineOf="@+id/start_Aflevering_2"
-        app:layout_constraintStart_toEndOf="@+id/start_Aflevering_2" />
+        app:layout_constraintBottom_toBottomOf="@+id/start_Aflevering_1"
+        app:layout_constraintStart_toEndOf="@+id/start_Aflevering_1" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="42dp"
         android:text="@string/aflevering_2"
-        app:layout_constraintStart_toEndOf="@+id/start_Aflevering_1"
-        app:layout_constraintTop_toBottomOf="@+id/start_Aflevering_2" />
+        app:layout_constraintStart_toEndOf="@+id/start_Aflevering_2"
+        app:layout_constraintTop_toBottomOf="@+id/start_Aflevering_1" />
 </android.support.constraint.ConstraintLayout>
