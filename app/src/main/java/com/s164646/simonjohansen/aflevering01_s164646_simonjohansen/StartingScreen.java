@@ -25,9 +25,7 @@ public class StartingScreen extends AppCompatActivity implements View.OnClickLis
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
-
     }
-
 
     @Override
     public void onClick(View kkk) {

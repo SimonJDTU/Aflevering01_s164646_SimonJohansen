@@ -1,20 +1,25 @@
 <resources>
     <string name="app_name">Aflevering01_s164646_SimonJohansen</string>
 
-    <string name="sIDandName">Simon Johansen - s164646</string>
-    <string name="aflevering_1">Basics</string>
-    <string name="aflevering_2">Galgeleg</string>
+    <string name="s_t_IDandName">Simon Johansen - s164646</string>
+    <string name="s_t_aflevering_1">Basics</string>
+    <string name="s_t_aflevering_2">Galgeleg</string>
 
 
-    <string name="welcome_text">Klik på en knap.</string>
-    <string name="nameField">Indtast venligst dit navn.</string>
-    <string name="button1">TextChange</string>
-    <string name="changed_b_name">Hej! :)</string>
-    <string name="button2">Test Intent</string>
-    <string name="button3">WebBrowser</string>
-    <string name="okButton">Velkommen</string>
-    <string name="webChange">Indtast Webpage</string>
+    <string name="s_t_clickButton">Klik på en knap.</string>
+    <string name="s_t_nameField">Indtast venligst dit navn.</string>
+    <string name="s_b_textChange">TextChange</string>
+    <string name="s_t_changedButtonName">Hej! :)</string>
+    <string name="s_b_testIntent">Test Intent</string>
+    <string name="s_b_webChange">WebBrowser</string>
+    <string name="s_b_velkommen">Velkommen</string>
+    <string name="s_t_webChange">Indtast Webpage</string>
 
-    <string name="newActvity">Velkommen til din nye activity</string>
-    <string name="title_activity_b">ActivityB</string>
+    <string name="s_b_newActvity">Velkommen til din nye activity</string>
+    <string name="s_t_activity_b">ActivityB</string>
+
+    <string name="s_b_play_game">Spil Spil</string>
+    <string name="s_b_guess_letter">Gæt</string>
+    <string name="s_b_give_up">Jeg giver op</string>
+
 </resources>

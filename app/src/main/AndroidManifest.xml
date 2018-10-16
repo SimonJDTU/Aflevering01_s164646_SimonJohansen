@@ -14,8 +14,9 @@
         <activity
             android:name=".Aflevering01_GetStarted"></activity>
         <activity
-            android:name=".TestIntent"
-            android:label="@string/title_activity_b"></activity>
+            android:name=".Aflevering02_Galgelej"></activity>
+        <activity
+            android:name=".TestIntent"></activity>
         <activity android:name=".StartingScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Aflevering02_Galgelej" />
     </application>
 
 </manifest>

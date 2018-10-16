@@ -26,14 +26,14 @@ public class Aflevering01_GetStarted extends AppCompatActivity implements View.O
         setContentView(R.layout.activity_get_started);
 
         //opret reference til TextView ved indtastning af navn og browser
-        velkommen = (EditText) findViewById(R.id.velkommenText);
+        velkommen = (EditText) findViewById(R.id.text_velkommen);
         browserReq = (EditText) findViewById(R.id.browserReq);
 
         //opret reference til knapperne på app'n
-        button1 = (Button) findViewById(R.id.button1);
-        button2 = (Button) findViewById(R.id.button2);
-        button3 = (Button) findViewById(R.id.button3);
-        okButton = (Button) findViewById(R.id.okButton);
+        button1 = (Button) findViewById(R.id.b_textChange);
+        button2 = (Button) findViewById(R.id.b_testIntent);
+        button3 = (Button) findViewById(R.id.b_webChange);
+        okButton = (Button) findViewById(R.id.b_velkommen);
 
         //opret listners til knapper som bliver sendt til switchcase længere nede
         button1.setOnClickListener(this);
@@ -54,23 +54,23 @@ public class Aflevering01_GetStarted extends AppCompatActivity implements View.O
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-            case R.id.button1:
+            case R.id.b_textChange:
                 Toast.makeText(this, "Textchange knappen er blevet klikket", Toast.LENGTH_SHORT).show();
                 System.out.println("Textchange knappen er blevet klikket");
                 button1.setText("Hej. Jeg er ny :)");
                 break;
-            case R.id.button2:
+            case R.id.b_testIntent:
                 Intent i = new Intent(this,TestIntent.class);
                 startActivity(i);
                 Toast.makeText(this, "New activity started", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.button3:
+            case R.id.b_webChange:
                 browserSet=browserReq.getText().toString();
                 webView.loadUrl(browserSet);
                 Toast.makeText(this, "Browser knappen er blevet klikket", Toast.LENGTH_SHORT).show();
                 System.out.println("Browser knappen er blevet klikket");
                 break;
-            case R.id.okButton:
+            case R.id.b_velkommen:
                 userName=velkommen.getText().toString();
                 Toast.makeText(this, "Velkommen, " + userName, Toast.LENGTH_SHORT).show();
                 System.out.println("Velkommen knappen er blevet klikket");

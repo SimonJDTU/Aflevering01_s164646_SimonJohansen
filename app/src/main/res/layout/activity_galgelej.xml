@@ -7,11 +7,42 @@
     tools:layout_editor_absoluteY="25dp">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/t_galgeleg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/aflevering_2"
+        android:layout_marginTop="15dp"
+        android:text="@string/s_t_aflevering_2"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_play_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/s_b_play_game"
+        app:layout_constraintStart_toStartOf="@+id/t_galgeleg"
+        app:layout_constraintTop_toBottomOf="@+id/t_galgeleg" />
+
+    <Button
+        android:id="@+id/b_guess_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/s_b_guess_letter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_play_game" />
+
+    <Button
+        android:id="@+id/b_give_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/s_b_give_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>
