@@ -21,5 +21,12 @@
     <string name="s_b_play_game">Spil Spil</string>
     <string name="s_b_guess_letter">Gæt</string>
     <string name="s_b_give_up">Jeg giver op</string>
+    <string name="s_t_guessLetter_blank"></string>
+    <string name="s_t_guessLetter">Gæt på et bogstav</string>
+    <string name="s_t_guessLetter_wrong">Du gættede rigtigt</string>
+    <string name="s_t_guessLetter_right">Du gættede forkert</string>
+    <string name="s_t_guessLetter_won">Du gættede ordet!</string>
+    <string name="s_t_guessLetter_lost">Han døde!</string>
+
 
 </resources>

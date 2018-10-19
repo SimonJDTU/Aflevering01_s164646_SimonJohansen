@@ -10,39 +10,90 @@
         android:id="@+id/t_galgeleg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/s_t_aflevering_2"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/b_give_up"
+        app:layout_constraintStart_toStartOf="@+id/b_play_game"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/b_play_game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
         android:text="@string/s_b_play_game"
-        app:layout_constraintStart_toStartOf="@+id/t_galgeleg"
-        app:layout_constraintTop_toBottomOf="@+id/t_galgeleg" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/b_give_up"
+        app:layout_constraintEnd_toEndOf="@+id/b_give_up" />
 
     <Button
         android:id="@+id/b_guess_letter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="11dp"
         android:text="@string/s_b_guess_letter"
+        app:layout_constraintBottom_toTopOf="@+id/hangMan"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b_play_game" />
+        app:layout_constraintStart_toEndOf="@+id/t_letterGuess"
+        app:layout_constraintTop_toBottomOf="@+id/t_guessLetter" />
 
     <Button
         android:id="@+id/b_give_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/s_b_give_up"
+        app:layout_constraintBottom_toTopOf="@+id/t_guessLetter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_galgeleg" />
+
+    <EditText
+        android:id="@+id/t_letterGuess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/s_t_guessLetter_blank"
+        app:layout_constraintEnd_toStartOf="@+id/b_guess_letter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_guessLetter" />
+
+    <TextView
+        android:id="@+id/t_guessLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="1dp"
+        android:text="@string/s_t_guessLetter"
+        app:layout_constraintBottom_toTopOf="@+id/b_guess_letter"
+        app:layout_constraintStart_toStartOf="@+id/t_letterGuess"
+        app:layout_constraintTop_toBottomOf="@+id/b_give_up" />
+
+    <TextView
+        android:id="@+id/t_gameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="temp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/hangMan"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="89dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_guess_letter"
+        app:srcCompat="@drawable/galge" />
 </android.support.constraint.ConstraintLayout>
