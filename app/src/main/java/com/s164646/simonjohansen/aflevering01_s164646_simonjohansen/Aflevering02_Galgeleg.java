@@ -12,12 +12,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Aflevering02_Galgelej extends AppCompatActivity implements View.OnClickListener {
+public class Aflevering02_Galgeleg extends AppCompatActivity implements View.OnClickListener {
 
-    Button button1, button2, button3;
-    TextView textView, gameInfo;
+    Button button_guessLetter, button_giveUp;
+    TextView guessLetterHint, gameInfo;
     ImageView hangMan;
-    galgelegLogik logik = new galgelegLogik();
+    galgelegLogik logik;
     EditText letterGuess;
     InputMethodManager inputManager;
 
@@ -26,56 +26,38 @@ public class Aflevering02_Galgelej extends AppCompatActivity implements View.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //set default view til starting screen
-        setContentView(R.layout.activity_galgelej);
+        setContentView(R.layout.activity_galgeleg_game);
 
         //stackoverflow solution to hiding keyboard on buttonclick (https://stackoverflow.com/questions/3400028/close-virtual-keyboard-on-button-press)
         inputManager = (InputMethodManager)
                 getSystemService(Context.INPUT_METHOD_SERVICE);
 
+        logik = new galgelegLogik();
+        logik.nulstil();
+
         hangMan=(ImageView) findViewById(R.id.hangMan);
-        hangMan.setVisibility(View.INVISIBLE);
 
         letterGuess = (EditText) findViewById(R.id.t_letterGuess);
-        letterGuess.setVisibility(View.INVISIBLE);
 
-        textView = (TextView) findViewById(R.id.t_guessLetter);
-        textView.setVisibility(View.INVISIBLE);
+        letterGuess = (EditText) findViewById(R.id.t_letterGuess);
+
+        guessLetterHint = (TextView) findViewById(R.id.t_guessLetter);
 
         gameInfo = (TextView) findViewById(R.id.t_gameInfo);
-        gameInfo.setVisibility(View.INVISIBLE);
 
-        button1 = (Button) findViewById(R.id.b_play_game);
-        button1.setOnClickListener(this);
+        button_guessLetter = (Button) findViewById(R.id.b_guess_letter);
+        button_guessLetter.setOnClickListener(this);
 
-        button2 = (Button) findViewById(R.id.b_guess_letter);
-        button2.setVisibility(View.INVISIBLE);
-        button2.setOnClickListener(this);
+        button_giveUp = (Button) findViewById(R.id.b_give_up);
+        button_giveUp.setOnClickListener(this);
 
-        button3 = (Button) findViewById(R.id.b_give_up);
-        button3.setVisibility(View.INVISIBLE);
-        button3.setOnClickListener(this);
+        opdaterSkærm();
 
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-
-            case R.id.b_play_game:
-                logik.nulstil();
-                opdaterSkærm();
-                Toast.makeText(this, "Spil Startet", Toast.LENGTH_SHORT).show();
-
-                //hides playbutton and shows game.
-                button1.setVisibility(View.INVISIBLE);
-                button2.setVisibility(View.VISIBLE);
-                button3.setVisibility(View.VISIBLE);
-                textView.setVisibility(View.VISIBLE);
-                letterGuess.setVisibility(View.VISIBLE);
-                gameInfo.setVisibility(View.VISIBLE);
-                hangMan.setVisibility(View.VISIBLE);
-                break;
-
             case R.id.b_guess_letter:
                 //hides keyboard on click.
                 inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
@@ -83,7 +65,7 @@ public class Aflevering02_Galgelej extends AppCompatActivity implements View.OnC
 
                 String bogstav = letterGuess.getText().toString();
                 if (bogstav.length() != 1) {
-                    textView.setText("Skriv præcis ét bogstav");
+                    guessLetterHint.setText("Skriv præcis ét bogstav");
                     return;
                 }
                 logik.gætBogstav(bogstav);
@@ -96,20 +78,11 @@ public class Aflevering02_Galgelej extends AppCompatActivity implements View.OnC
                 //hides keyboard on click.
                 inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
                         InputMethodManager.HIDE_NOT_ALWAYS);
-
-                //hides game and show playbutton
-                button1.setVisibility(View.VISIBLE);
-                button2.setVisibility(View.INVISIBLE);
-                button3.setVisibility(View.INVISIBLE);
-                textView.setVisibility(View.INVISIBLE);
-                letterGuess.setVisibility(View.INVISIBLE);
-                gameInfo.setVisibility(View.INVISIBLE);
-                hangMan.setVisibility(View.INVISIBLE);
+                finish();
                 break;
             default:
                 Toast.makeText(this, "Default hit", Toast.LENGTH_SHORT).show();
                 break;
-
         }
     }
 

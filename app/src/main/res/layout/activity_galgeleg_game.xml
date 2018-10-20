@@ -3,8 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="25dp">
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="ExtraText">
+
 
     <TextView
         android:id="@+id/t_galgeleg"
@@ -96,4 +99,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b_guess_letter"
         app:srcCompat="@drawable/galge" />
+
+
 </android.support.constraint.ConstraintLayout>

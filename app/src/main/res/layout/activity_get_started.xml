@@ -2,45 +2,47 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Aflevering01_GetStarted"
+    tools:context="Aflevering01_GetStarted"
     tools:layout_editor_absoluteY="25dp">
 
     <Button
         android:id="@+id/b_testIntent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="13dp"
         android:text="@string/s_b_testIntent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_clickButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/b_webChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="13dp"
-        android:layout_marginBottom="163dp"
         android:text="@string/s_b_webChange"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/browserReq" />
+        app:layout_constraintStart_toEndOf="@+id/browserReq"
+        app:layout_constraintTop_toBottomOf="@+id/b_testIntent" />
 
     <EditText
         android:id="@+id/text_velkommen"
         android:layout_width="0dp"
         android:layout_height="49dp"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="35dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/t_webChange"
+        app:layout_constraintBottom_toTopOf="@+id/t_clickButton"
         app:layout_constraintEnd_toStartOf="@+id/b_velkommen"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/t_aflevering_1" />
 
     <TextView
         android:id="@+id/t_namefield"
@@ -66,50 +68,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/s_t_clickButton"
-        app:layout_constraintBottom_toTopOf="@+id/b_textChange"
-        app:layout_constraintEnd_toEndOf="@+id/text_velkommen" />
+        app:layout_constraintBottom_toTopOf="@+id/b_testIntent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/b_textChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="32dp"
         android:text="@string/s_b_textChange"
-        app:layout_constraintBottom_toTopOf="@+id/browserReq"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_clickButton" />
 
     <WebView
         android:id="@+id/webView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b_webChange" />
+        app:layout_constraintTop_toBottomOf="@+id/browserReq" />
 
     <EditText
         android:id="@+id/browserReq"
         android:layout_width="0dp"
-        android:layout_height="46dp"
+        android:layout_height="0dp"
         android:layout_marginStart="12dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="URL"
-        app:layout_constraintBaseline_toBaselineOf="@+id/b_webChange"
+        app:layout_constraintBottom_toBottomOf="@+id/b_webChange"
         app:layout_constraintEnd_toStartOf="@+id/b_webChange"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_webChange" />
 
     <TextView
         android:id="@+id/t_webChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
         android:text="@string/s_t_webChange"
+        app:layout_constraintBottom_toTopOf="@+id/b_webChange"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b_textChange" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/t_aflevering_1"
