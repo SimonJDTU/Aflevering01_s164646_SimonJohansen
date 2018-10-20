@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Aflevering01_GetStarted" />
+        <activity android:name=".Aflevering01_GetStarted" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".Aflevering02_Galgeleg" />
         <activity android:name=".TestIntent" />
         <activity android:name=".StartingScreen">

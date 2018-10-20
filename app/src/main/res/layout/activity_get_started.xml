@@ -2,9 +2,9 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="Aflevering01_GetStarted"
     tools:layout_editor_absoluteY="25dp">
 
@@ -12,34 +12,32 @@
         android:id="@+id/b_testIntent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="186dp"
-        android:layout_marginEnd="13dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/s_b_testIntent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/b_velkommen" />
 
     <Button
         android:id="@+id/b_webChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
         android:layout_marginEnd="13dp"
         android:text="@string/s_b_webChange"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/browserReq"
-        app:layout_constraintTop_toBottomOf="@+id/b_testIntent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/browserReq"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/text_velkommen"
         android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/t_clickButton"
+        app:layout_constraintBottom_toBottomOf="@+id/t_clickButton"
         app:layout_constraintEnd_toStartOf="@+id/b_velkommen"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/t_aflevering_1" />
@@ -57,11 +55,12 @@
         android:id="@+id/b_velkommen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="7dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/s_b_velkommen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/text_velkommen"
-        app:layout_constraintTop_toTopOf="@+id/text_velkommen" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/t_clickButton"
@@ -94,22 +93,21 @@
     <EditText
         android:id="@+id/browserReq"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="12dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="URL"
-        app:layout_constraintBottom_toBottomOf="@+id/b_webChange"
         app:layout_constraintEnd_toStartOf="@+id/b_webChange"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/b_webChange" />
+        app:layout_constraintStart_toStartOf="@+id/text_velkommen"
+        app:layout_constraintTop_toBottomOf="@+id/b_textChange" />
 
     <TextView
         android:id="@+id/t_webChange"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/s_t_webChange"
-        app:layout_constraintBottom_toTopOf="@+id/b_webChange"
+        app:layout_constraintBottom_toTopOf="@+id/browserReq"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -117,11 +115,11 @@
         android:id="@+id/t_aflevering_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16dp"
         android:text="@string/s_t_aflevering_1"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="@+id/t_namefield"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

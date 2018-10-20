@@ -5,7 +5,6 @@
     <string name="s_t_aflevering_1">Basics</string>
     <string name="s_t_aflevering_2">Galgeleg</string>
 
-
     <string name="s_t_clickButton">Klik på en knap.</string>
     <string name="s_t_nameField">Indtast venligst dit navn.</string>
     <string name="s_b_textChange">TextChange</string>
@@ -20,7 +19,11 @@
 
     <string name="s_b_play_game">Spil Spil</string>
     <string name="s_b_help">Hjælp</string>
+    <string name="s_b_back">Tilbage til Udvalg</string>
+
     <string name="s_t_help">Galgeleg Hjælp</string>
+    <string name="s_b_mainMenu">Hovedmenu</string>
+
     <string name="s_b_guess_letter">Gæt</string>
     <string name="s_b_give_up">Jeg giver op</string>
     <string name="s_t_guessLetter_blank"></string>
@@ -29,8 +32,9 @@
     <string name="s_t_guessLetter_right">Du gættede forkert</string>
     <string name="s_t_guessLetter_won">Du gættede ordet!</string>
     <string name="s_t_guessLetter_lost">Han døde!</string>
-    <string name="s_b_mainMenu">Hovedmenu</string>
-    <string name="s_b_back">Tilbage til Udvalg</string>
+
+
+
 
     <string name="title_activity_galgeleg_help">galgeleg_help</string>
     <string name="title_activity_galgeleg_main_menu">galgeleg_mainMenu</string>

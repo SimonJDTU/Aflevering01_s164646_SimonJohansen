@@ -25,6 +25,9 @@ public class Aflevering01_GetStarted extends AppCompatActivity implements View.O
         //set default view til starting screen
         setContentView(R.layout.activity_get_started);
 
+        //in manifest on activity is implemented stackoverflow solution to stop keyboard from opening on activity start: android:windowSoftInputMode="stateHidden|adjustResize"
+        // (https://stackoverflow.com/questions/3037375/how-to-keep-soft-keyboard-from-opening-on-activity-launch-in-android)
+
         //opret reference til TextView ved indtastning af navn og browser
         velkommen = (EditText) findViewById(R.id.text_velkommen);
         browserReq = (EditText) findViewById(R.id.browserReq);
