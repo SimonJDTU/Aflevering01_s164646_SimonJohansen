@@ -33,6 +33,12 @@
     <string name="s_t_guessLetter_won">Du gættede ordet!</string>
     <string name="s_t_guessLetter_lost">Han døde!</string>
 
+    <string name="s_b_help_guessWrong">Gæt forkert</string>
+    <string name="s_t_help_guessExplain">Gæt på et bogstav.
+        Hvis bogstavet er i ordet, vil de blive vist i ordet.</string>
+    <string name="s_t_help_galgeExplain">Hvis det ikke er i ordet, vil galgemanden blive hængt. Du kan have 5 forkerte.</string>
+
+
 
 
 

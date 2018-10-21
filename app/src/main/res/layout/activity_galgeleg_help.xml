@@ -9,26 +9,26 @@
     tools:layout_editor_absoluteY="25dp">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/i_help_galge"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="2dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/forkert1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b_help_back" />
+        app:layout_constraintTop_toBottomOf="@+id/b_help_guess" />
 
     <Button
         android:id="@+id/b_help_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="6dp"
         android:text="@string/s_b_mainMenu"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -37,11 +37,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
         android:text="@string/s_t_help"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/b_help_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/b_help_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_b_guess_letter"
+        app:layout_constraintEnd_toEndOf="@+id/TextView"
+        app:layout_constraintStart_toStartOf="@+id/TextView"
+        app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+    <TextView
+        android:id="@+id/t_help_gameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="40dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/i_help_galge"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_help_guessWrong"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="41dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/s_t_help_guessExplain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_help_back" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:text="@string/s_t_help_galgeExplain"
+        app:layout_constraintBottom_toBottomOf="@+id/i_help_galge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i_help_galge"
+        app:layout_constraintTop_toTopOf="@+id/i_help_galge" />
+
 </android.support.constraint.ConstraintLayout>

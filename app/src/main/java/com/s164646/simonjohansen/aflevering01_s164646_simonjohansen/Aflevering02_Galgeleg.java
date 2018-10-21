@@ -14,12 +14,12 @@ import android.widget.Toast;
 
 public class Aflevering02_Galgeleg extends AppCompatActivity implements View.OnClickListener {
 
-    Button button_guessLetter, button_giveUp;
-    TextView guessLetterHint, gameInfo;
-    ImageView hangMan;
-    galgelegLogik logik;
-    EditText letterGuess;
-    InputMethodManager inputManager;
+    private Button button_guessLetter, button_giveUp;
+    private TextView guessLetterHint, gameInfo;
+    private ImageView hangMan;
+    private galgelegLogik logik;
+    private EditText letterGuess;
+    private InputMethodManager inputManager;
 
 
     @Override
