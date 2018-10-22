@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Aflevering01_GetStarted" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name=".Aflevering01_GetStarted"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity android:name=".Aflevering02_Galgeleg" />
         <activity android:name=".TestIntent" />
         <activity android:name=".StartingScreen">
@@ -23,8 +25,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".galgeleg_help"/>
-        <activity android:name=".galgeleg_mainMenu"/>
+        <activity android:name=".galgeleg_help" />
+        <activity android:name=".galgeleg_mainMenu" />
+        <activity
+            android:name="galgeleg_frag.galgeleg_fragmented"
+            android:label="@string/title_activity_galgeleg_fragmented"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

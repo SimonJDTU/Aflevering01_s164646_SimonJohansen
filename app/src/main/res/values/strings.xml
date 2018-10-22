@@ -39,10 +39,8 @@
     <string name="s_t_help_galgeExplain">Hvis det ikke er i ordet, vil galgemanden blive hængt. Du kan have 5 forkerte.</string>
 
 
-
-
-
     <string name="title_activity_galgeleg_help">galgeleg_help</string>
     <string name="title_activity_galgeleg_main_menu">galgeleg_mainMenu</string>
+    <string name="title_activity_galgeleg_fragmented">galgeleg_fragmented</string>
 
 </resources>

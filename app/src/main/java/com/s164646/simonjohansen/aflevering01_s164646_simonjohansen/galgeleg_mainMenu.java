@@ -2,7 +2,6 @@ package com.s164646.simonjohansen.aflevering01_s164646_simonjohansen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
