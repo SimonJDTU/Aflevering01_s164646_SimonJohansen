@@ -27,10 +27,6 @@
         </activity>
         <activity android:name=".galgeleg_help" />
         <activity android:name=".galgeleg_mainMenu" />
-        <activity
-            android:name="galgeleg_frag.galgeleg_fragmented"
-            android:label="@string/title_activity_galgeleg_fragmented"
-            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
