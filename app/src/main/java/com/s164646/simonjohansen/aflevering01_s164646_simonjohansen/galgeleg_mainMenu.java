@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class galgeleg_mainMenu extends AppCompatActivity implements View.OnClickListener {
 
-    Button button_help, button_playGame, button_back;
+    private Button button_help, button_playGame, button_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,11 +2,11 @@ package com.s164646.simonjohansen.aflevering01_s164646_simonjohansen;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
 
 public class StartingScreen extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,11 +22,11 @@ public class StartingScreen extends AppCompatActivity implements View.OnClickLis
 
         button1 = (Button) findViewById(R.id.start_Aflevering_1);
         button2 = (Button) findViewById(R.id.start_Aflevering_2);
-        //button3 = (Button) findViewById(R.id.);
+        button3 = (Button) findViewById(R.id.start_Aflevering_3);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
-        //button3.setOnClickListener(this);
+        button3.setOnClickListener(this);
     }
 
     @Override
@@ -42,10 +42,11 @@ public class StartingScreen extends AppCompatActivity implements View.OnClickLis
                 startActivity(e);
                 Toast.makeText(this, "Knap 2 klikket", Toast.LENGTH_SHORT).show();
                 break;
-            //case R.id.:
-
-                //Toast.makeText(this, "Knap 3 klikket", Toast.LENGTH_SHORT).show();
-                //break;
+            case R.id.start_Aflevering_3 :
+                Intent f = new Intent(this, fragment_galgeleg_mainMenu.class);
+                startActivity(f);
+                Toast.makeText(this, "Knap 3 klikket", Toast.LENGTH_SHORT).show();
+                break;
             default:
                 Toast.makeText(this, "Default hit", Toast.LENGTH_SHORT).show();
                 break;

@@ -1,4 +1,4 @@
-package galgeleg_frag;
+package com.s164646.simonjohansen.aflevering01_s164646_simonjohansen;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,18 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.s164646.simonjohansen.aflevering01_s164646_simonjohansen.R;
-
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link fragment_galgeleg_main_menu.OnFragmentInteractionListener} interface
+ * {@link Titlebar.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link fragment_galgeleg_main_menu#newInstance} factory method to
+ * Use the {@link Titlebar#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_galgeleg_main_menu extends Fragment {
+public class Titlebar extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +29,7 @@ public class fragment_galgeleg_main_menu extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public fragment_galgeleg_main_menu() {
+    public Titlebar() {
         // Required empty public constructor
     }
 
@@ -41,11 +39,11 @@ public class fragment_galgeleg_main_menu extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment_galgeleg_main_menu.
+     * @return A new instance of fragment Titlebar.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragment_galgeleg_main_menu newInstance(String param1, String param2) {
-        fragment_galgeleg_main_menu fragment = new fragment_galgeleg_main_menu();
+    public static Titlebar newInstance(String param1, String param2) {
+        Titlebar fragment = new Titlebar();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -66,25 +64,7 @@ public class fragment_galgeleg_main_menu extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_galgeleg_main_menu, container, false);
-    }
-
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
+        return inflater.inflate(R.layout.fragment_titlebar, container, false);
     }
 
     @Override
@@ -93,18 +73,10 @@ public class fragment_galgeleg_main_menu extends Fragment {
         mListener = null;
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.start_Aflevering_1:
+        }
     }
 }
