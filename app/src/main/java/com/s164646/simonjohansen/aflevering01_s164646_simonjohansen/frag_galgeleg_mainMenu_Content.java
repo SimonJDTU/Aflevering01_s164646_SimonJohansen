@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class frag_menuContent extends Fragment {
+public class frag_galgeleg_mainMenu_Content extends Fragment {
 
     Button button1,button2,button3;
 

@@ -13,7 +13,7 @@ public class frag_galgeleg_mainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_galgeleg_main_menu);
 
-        Fragment menuFragment = new frag_menuContent();
+        Fragment menuFragment = new frag_galgeleg_mainMenu_Content();
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.frag_content, menuFragment)

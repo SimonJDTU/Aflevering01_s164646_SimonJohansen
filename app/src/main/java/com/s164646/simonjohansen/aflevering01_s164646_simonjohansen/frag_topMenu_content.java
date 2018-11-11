@@ -25,7 +25,7 @@ public class frag_topMenu_content extends Fragment implements View.OnClickListen
     private String mParam1;
     private String mParam2;
 
-    //private frag_menuContent.OnFragmentInteractionListener mListener;
+    //private frag_galgeleg_mainMenu_Content.OnFragmentInteractionListener mListener;
 
     public frag_topMenu_content() {
         // Required empty public constructor
