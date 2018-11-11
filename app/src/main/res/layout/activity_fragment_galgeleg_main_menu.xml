@@ -6,4 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".fragment_galgeleg_mainMenu">
 
+    <fragment
+        android:id="@+id/frag_topMenu"
+        android:name="com.s164646.simonjohansen.aflevering01_s164646_simonjohansen.frag_menuContent"
+        android:layout_width="0dp"
+        android:layout_height="488dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_content" />
+
+    <fragment
+        android:id="@+id/frag_content"
+        android:name="com.s164646.simonjohansen.aflevering01_s164646_simonjohansen.frag_topMenu"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/frag_topMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

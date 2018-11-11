@@ -20,13 +20,17 @@
         <activity android:name=".TestIntent" />
         <activity android:name=".galgeleg_help" />
         <activity android:name=".galgeleg_mainMenu" />
-        <activity android:name="fragment_galgeleg_mainMenu"/>
         <activity android:name=".StartingScreen">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".frag_galgeleg_mainMenu"
+            android:label="@string/title_activity_frag_galgeleg_main_menu"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

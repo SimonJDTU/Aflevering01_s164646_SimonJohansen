@@ -1,7 +1,5 @@
 package com.s164646.simonjohansen.aflevering01_s164646_simonjohansen;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,12 +10,12 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Titlebar.OnFragmentInteractionListener} interface
+ * {@link frag_topMenu.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Titlebar#newInstance} factory method to
+ * Use the {@link frag_topMenu#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Titlebar extends Fragment implements View.OnClickListener {
+public class frag_topMenu extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -29,7 +27,7 @@ public class Titlebar extends Fragment implements View.OnClickListener {
 
     private OnFragmentInteractionListener mListener;
 
-    public Titlebar() {
+    public frag_topMenu() {
         // Required empty public constructor
     }
 
@@ -39,11 +37,11 @@ public class Titlebar extends Fragment implements View.OnClickListener {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Titlebar.
+     * @return A new instance of fragment frag_topMenu.
      */
     // TODO: Rename and change types and number of parameters
-    public static Titlebar newInstance(String param1, String param2) {
-        Titlebar fragment = new Titlebar();
+    public static frag_topMenu newInstance(String param1, String param2) {
+        frag_topMenu fragment = new frag_topMenu();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

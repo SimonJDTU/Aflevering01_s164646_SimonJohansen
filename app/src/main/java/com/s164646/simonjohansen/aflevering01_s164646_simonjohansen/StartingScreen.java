@@ -43,7 +43,7 @@ public class StartingScreen extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(this, "Knap 2 klikket", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.start_Aflevering_3 :
-                Intent f = new Intent(this, fragment_galgeleg_mainMenu.class);
+                Intent f = new Intent(this, frag_galgeleg_mainMenu.class);
                 startActivity(f);
                 Toast.makeText(this, "Knap 3 klikket", Toast.LENGTH_SHORT).show();
                 break;

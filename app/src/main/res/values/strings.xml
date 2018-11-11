@@ -44,7 +44,9 @@
     <string name="title_activity_galgeleg_main_menu">galgeleg_mainMenu</string>
     <string name="title_activity_galgeleg_fragmented">galgeleg_fragmented</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hello_blank_fragment">fragment top menu</string>
+    <string name="hello_blank_fragment1">fragment menu content</string>
+    <string name="title_activity_frag_galgeleg_main_menu">frag_galgeleg_mainMenu</string>
 
 </resources>
