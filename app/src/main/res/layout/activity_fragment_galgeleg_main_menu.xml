@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment_galgeleg_mainMenu">
+    android:layout_height="match_parent">
 
     <fragment
         android:id="@+id/frag_topMenu"
@@ -18,7 +17,7 @@
 
     <fragment
         android:id="@+id/frag_content"
-        android:name="com.s164646.simonjohansen.aflevering01_s164646_simonjohansen.frag_topMenu"
+        android:name="com.s164646.simonjohansen.aflevering01_s164646_simonjohansen.frag_topMenu_content"
         android:layout_width="0dp"
         android:layout_height="69dp"
         app:layout_constraintBottom_toTopOf="@+id/frag_topMenu"
