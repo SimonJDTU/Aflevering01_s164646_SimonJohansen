@@ -26,7 +26,6 @@ public class frag_galgeleg_youLost extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        getFragmentManager().popBackStack();
         super.onBackPressed();
     }
 }

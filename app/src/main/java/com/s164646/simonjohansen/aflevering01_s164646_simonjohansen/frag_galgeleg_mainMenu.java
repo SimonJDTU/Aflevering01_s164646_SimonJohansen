@@ -11,6 +11,7 @@ public class frag_galgeleg_mainMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_fragment_galgeleg_main_menu);
     }
 

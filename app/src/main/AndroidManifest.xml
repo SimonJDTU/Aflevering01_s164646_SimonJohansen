@@ -30,7 +30,7 @@
         <activity android:name=".frag_galgeleg_mainMenu" />
         <activity android:name=".galgeleg_highScore" />
         <activity
-            android:name=".galgeleg_contact"
+            android:name=".galgeleg_problems_and_thoughts"
             android:label="@string/title_activity_galgeleg_contact"
             android:theme="@style/AppTheme" />
         <activity android:name=".frag_galgeleg_youWon" />

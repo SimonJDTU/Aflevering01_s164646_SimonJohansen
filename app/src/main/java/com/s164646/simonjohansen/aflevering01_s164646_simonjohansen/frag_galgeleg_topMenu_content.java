@@ -42,7 +42,7 @@ public class frag_galgeleg_topMenu_content extends Fragment implements View.OnCl
                 startActivity(e);
                 break;
             case R.id.b_frag_contact:
-                Intent f = new Intent(getActivity(), galgeleg_contact.class);
+                Intent f = new Intent(getActivity(), galgeleg_problems_and_thoughts.class);
                 startActivity(f);
                 break;
             default:

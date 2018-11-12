@@ -4,6 +4,7 @@ package com.s164646.simonjohansen.aflevering01_s164646_simonjohansen;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,12 +18,14 @@ import android.widget.TextView;
 
 public class frag_galgeleg_game extends Fragment implements View.OnClickListener {
 
+    private static long solveTime;
     private Button button_guessLetter, button_giveUp;
     private TextView guessLetterHint, gameInfo;
     private ImageView hangMan;
     private static galgelegLogik logik;
     private EditText letterGuess;
     private InputMethodManager inputManager;
+    long timer1,timer2;
 
     public View onCreateView(LayoutInflater i, ViewGroup container, Bundle savedInstanceState) {
         View rod = i.inflate(R.layout.fragment_galgeleg_game, container, false);
@@ -49,6 +52,9 @@ public class frag_galgeleg_game extends Fragment implements View.OnClickListener
 
         button_giveUp = (Button) rod.findViewById(R.id.b_frag_give_up);
         button_giveUp.setOnClickListener(this);
+
+        //used to check solvetime for highScore List
+        timer1 = SystemClock.currentThreadTimeMillis();
 
         opdaterSkærm();
 
@@ -79,7 +85,7 @@ public class frag_galgeleg_game extends Fragment implements View.OnClickListener
                 getFragmentManager().popBackStack();
                 break;
             default:
-               // Toast.makeText(this, "Default hit", Toast.LENGTH_SHORT).show();
+                //cant toast in fragment.
                 break;
         }
     }
@@ -89,10 +95,16 @@ public class frag_galgeleg_game extends Fragment implements View.OnClickListener
         gameInfo.append("\n\nDu har " + logik.getAntalForkerteBogstaver() + " forkerte:" + logik.getBrugteBogstaver());
 
         if (logik.erSpilletVundet()) {
+            //used to check solvetime for highScore List
+            timer2 = SystemClock.currentThreadTimeMillis();
+            setSolveTime(timer1,timer2);
+
+            button_giveUp.setText("Click her for hovedmenu");
             Intent won = new Intent(getActivity(), frag_galgeleg_youWon.class);
             startActivity(won);
         }
         if (logik.erSpilletTabt()) {
+            button_giveUp.setText("Click her for hovedmenu");
             Intent lost = new Intent(getActivity(), frag_galgeleg_youLost.class);
             startActivity(lost);
         }
@@ -128,4 +140,12 @@ public class frag_galgeleg_game extends Fragment implements View.OnClickListener
         return logik.getOrdet();
     }
 
+    public void setSolveTime(long d1, long d2){
+        //setting solvetime to seconds
+        solveTime=(d2-d1)/10;
+    }
+
+    public static long getSolveTime() {
+        return solveTime;
+    }
 }
