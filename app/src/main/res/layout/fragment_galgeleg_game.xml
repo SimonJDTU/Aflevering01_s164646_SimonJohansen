@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".frag_galgeleg_game"
+    tools:ignore="ExtraText"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/t_frag_galgeleg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/s_t_aflevering_2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/b_frag_give_up"
+        app:layout_constraintStart_toStartOf="@+id/b_frag_give_up"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_frag_guess_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/s_b_guess_letter"
+        app:layout_constraintBottom_toTopOf="@+id/frag_hangMan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/t_frag_letterGuess" />
+
+    <Button
+        android:id="@+id/b_frag_give_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/s_b_give_up"
+        app:layout_constraintBottom_toTopOf="@+id/t_frag_guessLetter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_frag_galgeleg" />
+
+    <EditText
+        android:id="@+id/t_frag_letterGuess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/s_t_guessLetter_blank"
+        app:layout_constraintBottom_toTopOf="@+id/frag_hangMan"
+        app:layout_constraintEnd_toStartOf="@+id/b_frag_guess_letter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_frag_guessLetter" />
+
+    <TextView
+        android:id="@+id/t_frag_guessLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/s_t_guessLetter"
+        app:layout_constraintBottom_toTopOf="@+id/t_frag_letterGuess"
+        app:layout_constraintEnd_toEndOf="@+id/t_frag_letterGuess"
+        app:layout_constraintTop_toBottomOf="@+id/b_frag_give_up" />
+
+    <TextView
+        android:id="@+id/t_frag_gameInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="19dp"
+        android:text="temp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/frag_hangMan"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="89dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_frag_letterGuess"
+        app:srcCompat="@drawable/galge" />
+
+
+</android.support.constraint.ConstraintLayout>

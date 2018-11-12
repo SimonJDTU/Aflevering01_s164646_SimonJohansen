@@ -39,14 +39,20 @@
         Hvis bogstavet er i ordet, vil de blive vist i ordet.</string>
     <string name="s_t_help_galgeExplain">Hvis det ikke er i ordet, vil galgemanden blive hængt. Du kan have 5 forkerte.</string>
 
-
     <string name="title_activity_galgeleg_help">galgeleg_help</string>
     <string name="title_activity_galgeleg_main_menu">galgeleg_mainMenu</string>
     <string name="title_activity_galgeleg_fragmented">galgeleg_fragmented</string>
+    <string name="title_activity_galgeleg_contact">galgeleg_contact</string>
 
+    <string name="s_b_frag_highScore">High Score</string>
+    <string name="s_b_frag_help">Hjælp</string>
+    <string name="s_b_frag_contact">Kontakt</string>
+    <string name="s_b_frag_words">See Words, not Implemented</string>
+    <string name="s_t_frag_galgeleg_title">Fragmented Galgeleg</string>
+    <string name="s_t_frag_galgeleg_youLost">Du tabte desværre!</string>
+    <string name="s_t_frag_galgeleg_youWon">Du vandt!</string>
 
-    <string name="hello_blank_fragment">fragment top menu</string>
-    <string name="hello_blank_fragment1">fragment menu content</string>
-    <string name="title_activity_frag_galgeleg_main_menu">frag_galgeleg_mainMenu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
