@@ -7,89 +7,92 @@
     android:background="@drawable/background"
     tools:layout_editor_absoluteY="25dp">
 
-    <Button
-        android:id="@+id/start_Aflevering_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/start_Aflevering_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/start_Aflevering_1" />@strings
-    tools:layout_editor_absoluteX="16dp"
-    tools:layout_editor_absoluteY="161dp" />
-
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/s_t_IDandName"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/s_t_clickButton"
-        app:layout_constraintBottom_toTopOf="@+id/start_Aflevering_1"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="13dp"
-        android:text="@string/s_t_aflevering_1"
-        app:layout_constraintBottom_toBottomOf="@+id/start_Aflevering_1"
-        app:layout_constraintStart_toEndOf="@+id/start_Aflevering_1" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/s_t_aflevering_2"
-        app:layout_constraintBottom_toBottomOf="@+id/start_Aflevering_2"
-        app:layout_constraintStart_toEndOf="@+id/start_Aflevering_2" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/s_t_aflevering_3"
-        app:layout_constraintBottom_toBottomOf="@+id/start_Aflevering_3"
-        app:layout_constraintStart_toEndOf="@+id/start_Aflevering_3" />
-
-    <Button
-        android:id="@+id/start_Aflevering_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/start_Aflevering_2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <Button
+            android:id="@+id/start_Aflevering_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_t_aflevering_1"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/start_Aflevering_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_t_aflevering_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_Aflevering_1" />
+
+        <Button
+            android:id="@+id/start_Aflevering_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_t_aflevering_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_Aflevering_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout><![CDATA[
+
+    @strings
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="161dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
 </android.support.constraint.ConstraintLayout>

@@ -34,7 +34,8 @@
             android:label="@string/title_activity_galgeleg_contact"
             android:theme="@style/AppTheme" />
         <activity android:name=".frag_galgeleg_youWon" />
-        <activity android:name=".frag_galgeleg_youLost"></activity>
+        <activity android:name=".frag_galgeleg_youLost" />
+        <activity android:name=".FinalGalgeleg_MainMenu"></activity>
     </application>
 
 </manifest>

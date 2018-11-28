@@ -54,16 +54,6 @@
     <string name="s_t_frag_galgeleg_youWon">Du vandt! Tillykke!</string>
     <string name="s_t_frag_galgeleg_youWon2">Du reddede manden! Godt spillet!</string>
     <string name="s_t_frag_galgeleg_highScore">Galgeleg HighScore!</string>
-    <string name="s_t_frag_PnT">Der er blevet implementeret et vinder og taber side.
-
-    Der vises en liste af highscores med sekunder det tog at løse opgaven. Dog er sekunderne ikke udregnet rigtigt.
-    Listen er ikke sorteret, dog er der en liste over alle der har vundet. Da jeg ikke kunne finde en måde at trække keywords ud og bruge dem til at få de sammenhængende værdier.
-
-    Fragments er kun blevet implementeret 2 gange i starten for at lege med dem. Når jeg bruger onBackPressed i dem, lukker de ned og jeg kan ikke gå tilbage i stacken.
-
-    Hovedmenuknapperne til tilgå's MENS spillet er igangværende. Altså fragmentet under det nye fragment er stadig brugbart.
-
-    Jeg har brgut Nexus 4 med Android 7.0, API 24 til alle simuleringer. </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
